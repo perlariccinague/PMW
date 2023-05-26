@@ -1,0 +1,89 @@
+@import "variables";
+
+.mobile_menu .inner {
+  background: url("/files/assets/layout/pudelwohl-mopsfidel-weimar-dog-cat-silhouette-background.svg")
+              no-repeat center 400px,radial-gradient(circle, #c9920e 20%, #a0730a 95%);
+  .header-right {
+    .menu-close {
+      img {
+        width: 80px;
+        transition: transform 250ms;
+        &:hover {
+          transform: rotate(90deg);
+        }
+      }
+    }
+  }
+}
+
+.background-image, .mod_navigation {
+  margin: 0 auto;
+  width: 90%;
+  max-width:$max-width;
+}
+
+.menu-nav {
+  position: relative;
+}
+
+.background-image {
+  position: absolute;
+  z-index: 1;
+  text-align: center;
+  left: 50%;
+  margin-top: 186px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  img {
+    width: 100%;
+  }
+}
+
+.mod_navigation {
+  margin: 100px auto 0;
+  position: relative;
+  z-index: 10;
+  .mod_customnav {
+    ul {
+      li {
+        text-align: center;
+        font: normal normal 500 22px /26px Barlow;
+        padding: 10px 0;
+        border-bottom: 1px solid white;
+        text-transform: uppercase;
+        a {
+          color: white;
+          text-decoration: none;
+          transition: color250ms;
+          &:hover {
+            color: $grau;
+          }
+        }
+        &.active {
+          color: $grau;
+        }
+      }
+    }
+  }
+}
+
+.newsletter {
+  text-align: center;
+  a {
+    button{
+      color: white;
+      font: normal normal 500 22px /26px Barlow;
+      padding: 10px 0;
+      text-transform: uppercase;
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .mobile_menu .inner .header-right .menu-close img {
+    width: 60px;
+  }
+  .mod_navigation {
+    margin: 40px auto;
+  }
+}
