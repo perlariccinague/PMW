@@ -204,9 +204,24 @@ p {
   width: 90%;
   max-width: $max-width;
   margin: 0 auto;
-  p {
+  p, ul {
     font: normal normal 400 20px/30px Barlow;
     color: $grau;
+  }
+  ul {
+    li {
+      position: relative;
+      margin-left: 22px;
+      &:before {
+        color: #707c7c;
+        font-weight: normal;
+        content: "—";
+        position: absolute;
+        margin-left: -26px;
+        font-size: 25px;
+        margin-top: -3px;
+      }
+    }
   }
 }
 
