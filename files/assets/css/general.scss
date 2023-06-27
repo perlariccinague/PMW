@@ -246,7 +246,7 @@ html.mobile_menu_active {
     height: 100%;
     background-size: cover;
     position: absolute;
-    animation: slide 10s infinite;
+    animation: slide 20s infinite;
     opacity: 0;
     img {
       height: 70vh;
@@ -266,23 +266,21 @@ html.mobile_menu_active {
 .banner_image.desktop > div:nth-child(4) {
   animation-delay: 15s;
 }
-.banner_image.desktop> div:nth-child(5) {
+/*.banner_image.desktop> div:nth-child(5) {
   animation-delay: 20s;
-}
+}*/
 
 @keyframes slide {
   10% {
     opacity: 1;
   }
-  20% {
+  25% {
     opacity: 1;
   }
-  30% {
-    opacity: 1;
+  35% {
+    opacity: 0;
   }
-  90% {
-    opacity: 1;
-  }
+
 }
 
 
